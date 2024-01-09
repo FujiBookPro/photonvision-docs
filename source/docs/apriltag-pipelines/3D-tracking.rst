@@ -6,7 +6,7 @@
 Ambiguity
 ---------
 
-Translating from 2D to 3D using data from the calibration and the four tag corners can lead to "pose ambiguity", where it appears that the AprilTag pose is flipping between two different poses. You can read more about this issue `here. <https://docs.wpilib.org/en/stable/docs/software/vision-processing/apriltag/apriltag-intro.html#d-to-3d-ambiguity>` Ambiguity is calculated as the ratio of reprojection errors between two pose solutions (if they exist), where reprojection error is the error corresponding to the image distance between where the apriltag's corners are detected vs where we expect to see them based on the tag's estimated camera relative pose.
+Translating from 2D to 3D using data from the calibration and the four tag corners can lead to "pose ambiguity", where it appears that the AprilTag pose is flipping between two different poses. You can read more about this issue :ref:`here. <https://docs.wpilib.org/en/stable/docs/software/vision-processing/apriltag/apriltag-intro.html#d-to-3d-ambiguity>` Ambiguity is calculated as the ratio of reprojection errors between two pose solutions (if they exist), where reprojection error is the error corresponding to the image distance between where the apriltag's corners are detected vs where we expect to see them based on the tag's estimated camera relative pose.
 
 There a few steps you can take to resolve/mitigate this issue:
 
